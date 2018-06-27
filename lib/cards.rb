@@ -1,6 +1,5 @@
 require_relative 'cards/basic'
 require_relative 'cards/blog'
-require_relative 'cards/cocktail'
 require_relative 'cards/ftfy'
 require_relative 'cards/work'
 require_relative 'cards/person'

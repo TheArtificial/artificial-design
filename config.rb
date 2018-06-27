@@ -70,12 +70,6 @@ Time.zone = "Amsterdam"
 # apparently a blog permalink ending with .html isn't obvious enough
 ::Rack::Mime::MIME_TYPES[''] = 'text/html'
 
-# Cocktails
-data.cocktails.each do |c|
-  metadata = { cocktail: c, title: c.name, author: c.author } # used for locals and for data (for search)
-  proxy "/cocktails/#{c.slug}.html", "/cocktails/template.html", locals: metadata, data: metadata, ignore: true, title: "just for search"
-end
-
 # Blog
 activate :blog do |blog|
   blog.prefix = "blog"
@@ -110,7 +104,7 @@ activate :search do |search|
   include Padrino::Helpers::FormatHelpers
   include Padrino::Helpers::TagHelpers
 
-  search.resources = ['blog/', 'cocktails/', 'work/', 'ftfy/']
+  search.resources = ['blog/', 'work/', 'ftfy/']
   search.index_path = 'search/index.json'
   search.fields = {
     title:    {boost: 100, store: true, required: true},
