@@ -34,9 +34,8 @@ body.index #header .flex.container {
 	height: 100vh;
 
 	&>.container {
-		padding-top: 120px;
-		height: calc(100vh - 120px);
-
+		padding-top: 200px;
+		color: $deep-violet;
 	}
 }
 

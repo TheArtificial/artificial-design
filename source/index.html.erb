@@ -20,28 +20,27 @@ nofeed: true
 
 <script>
   $( document ).ready(function() {
-    scrollspy('#nav-panels', $(window).height()/2, tweenGradient);
-    tweenGradient($('#systems'),0);
-    updatePagination($('#nav-panels a'), 'systems');
+    scrollspy('#nav-panels', $(window).height()/2, tweenColor);
+    tweenColor($('#strategy'),0);
+    updatePagination($('#nav-panels a'), 'strategy');
     $('.slide-panel').css('background','none');
   });
 
-  function tweenGradient(currentElement, offset) {
-    var topColor = jQuery.Color(currentElement.data('gradient-top')),
-        bottomColor = jQuery.Color(currentElement.data('gradient-bottom')),
+  function tweenColor(currentElement, offset) {
+    console.log(currentElement);
+    var bgColor = jQuery.Color(currentElement.data('background-color')),
         overlayColor = jQuery.Color(currentElement.data('overlay')),
         nextElement = currentElement.next('.slide-panel');
     if (nextElement.length > 0) {
-      var nextTopColor = jQuery.Color(nextElement.data('gradient-top')),
-          nextBottomColor = jQuery.Color(nextElement.data('gradient-bottom')),
+      var nextBgColor = jQuery.Color(nextElement.data('background-color')),
           nextOverlayColor = jQuery.Color(nextElement.data('overlay'));
-      topColor = topColor.transition(nextTopColor, offset);
-      bottomColor = bottomColor.transition(nextBottomColor, offset);
+      bgColor = bgColor.transition(nextBgColor, offset);
       overlayColor = overlayColor.transition(nextOverlayColor, offset);
     }
-    $('#background').css('background-image','linear-gradient('+topColor.toRgbaString()+', '+bottomColor.toRgbaString()+')');
+    console.log(bgColor);
+    $('#background').css('background-color', bgColor);
     // $('body').css('background-color',currentElement.data('glitch'));
-    $('#header').css('background-color',overlayColor.alpha(0.25).toRgbaString());
+    $('#header').css('background-color',overlayColor.alpha(1.0).toRgbaString());
     $('#nav-panels li svg *').css('fill',overlayColor.toHexString());
 
     // $('#logo').text(offset);
@@ -50,36 +49,11 @@ nofeed: true
 
 </script>
 
-<section id="side-nav">
-  <div class="flex container">
-    <div class="col-1 left-11">
-      <nav id="nav-panels" class="iconlist">
-          <ul>
-            <li class="disabled"><a class="prev"><svg class="arrow" version="1.1"
-            	 width="24px" height="24px" viewBox="0 0 24 24"><polygon class="arrows" points="12,1.586 1.293,12.293 2.707,13.707 11,5.414 11,23 13,23 13,5.414 21.293,13.707 22.707,12.293 "/></svg></a></li>
-            <li class="active"><a href="#systems"><svg class="dot" version="1.1"
-            	 width="2px" height="2px" viewBox="0 0 2 2"><rect x="0" y="0" width="2" height="2"/></svg></a></li>
-            <li><a href="#integrated"><svg class="dot" version="1.1"
-            	 width="2px" height="2px" viewBox="0 0 2 2"><rect x="0" y="0" width="2" height="2"/></svg></a></li>
-            <li><a href="#global"><svg class="dot" version="1.1"
-            	 width="2px" height="2px" viewBox="0 0 2 2"><rect x="0" y="0" width="2" height="2"/></svg></a></li>
-            <li><a href="#details"><svg class="dot" version="1.1"
-            	 width="2px" height="2px" viewBox="0 0 2 2"><rect x="0" y="0" width="2" height="2"/></svg></a></li>
-            <li><a href="#possible"><svg class="dot" version="1.1"
-            	 width="2px" height="2px" viewBox="0 0 2 2"><rect x="0" y="0" width="2" height="2"/></svg></a></li>
-            <li><a class="next"><svg class="arrow" version="1.1"
-            	 width="24px" height="24px" viewBox="0 0 24 24"><polygon points="21.293,10.293 13,18.586 13,1 11,1 11,18.586 2.707,10.293 1.293,11.707 12,22.414 22.707,11.707"/></svg></a></li>
-          </ul>
-      </nav>
-    </div>
-  </div>
-</section>
-
 <div id="background"> </div>
 
 <div class="bleed slide-container">
 
-  <div class="slide-panel bleed aqua" data-gradient-bottom="#B7E5DD" data-gradient-top="#B7E5DD" data-overlay="#190033" id="strategy">
+  <div class="slide-panel bleed aqua" data-background-color="#B7E5DD" data-overlay="#B7E5DD" id="strategy">
     <div class="flex container">
       <div class="col-10 right-2">
         <div class="padded">
@@ -100,7 +74,7 @@ nofeed: true
     </div>
   </div>
 
-  <div class="slide-panel bleed sea" data-gradient-bottom="#A6CCD5" data-gradient-top="#A6CCD5" data-overlay="#190033" id="clients">
+  <div class="slide-panel bleed sea" data-background-color="#A6CCD5" data-overlay="#A6CCD5" id="clients">
     <div class="flex container">
       <div class="col-10 right-2">
         <div class="padded">
@@ -455,7 +429,7 @@ nofeed: true
     </div>
   </div>
 
-  <div class="slide-panel bleed sky" data-gradient-bottom="#95B3CE" data-gradient-top="#95B3CE" data-overlay="#190033" id="clients">
+  <div class="slide-panel bleed sky" data-background-color="#95B3CE" data-overlay="#95B3CE" id="clients">
     <div class="flex container">
       <div class="col-10 right-2">
         <div class="padded">

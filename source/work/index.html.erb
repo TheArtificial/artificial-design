@@ -4,18 +4,19 @@ noindex: true
 ---
 <!-- page content -->
 <section id="content">
-	<div class="bleed">
+	<div class="bleed aqua">
 		<div class="flex container">
 			<div class="col-12">
 				<div class="padded section-title">
-					<h1 class="title">Our Work</h1>
-					<div class="small-body">Sometimes with clients, sometimes self-motivated</div>
+					<p class="label">From the past 5 years</p>
+					<h1 class="title">A Selection of Projects</h1>
 				</div>
 			</div>
 		</div>
+	</div>
 
 	<!-- cards -->
-		<div class="flex container padded-bottom">
+		<div class="flex container card-stack padded-bottom">
 
 			<%
 	      work_folder = current_page.path
@@ -36,11 +37,10 @@ noindex: true
 
 			<div class="col-4">
 	      <% link_to work do %>
-					<div class="card case-study center <%= color %>">
+					<div class="card case-study <%= color %>">
 	          <div class="padded">
 							<img src="<%= thumbnail %>">
 							<h3 class="small-subtitle"><%= title %></h3>
-							<div class="card-rule"></div>
 							<p class="snippit"><%= snippet %></p>
 	          </div>
 	         </div>
