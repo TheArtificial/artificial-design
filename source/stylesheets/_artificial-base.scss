@@ -1,6 +1,5 @@
-// Artificial base css
-// May 2015
-// This document should not be edited
+// Artificial Design Base CSS
+// June 2018
 
 
 html {
@@ -60,29 +59,6 @@ body {
 		height: 106px;
 		display: block;
 	}
-
-	#nav-secondary {
-		width: 100%;
-		display: block;
-		border-bottom-width: 1px;
-		border-bottom-style: solid;
-
-		ul {
-			text-align: center;
-			margin: 0 auto;
-			padding: 0;
-
-			li {
-				display: inline-block;
-				margin: 0 10px 0 10px;
-				padding: 8px 0 14px 0;
-
-				a {
-					text-decoration: none;
-				}
-			}
-		}
-	}
 }
 
 // tablet and desktop
@@ -114,23 +90,9 @@ body {
 			}
 		}
 	}
-
+	
 	.underheader {
 		height: 68px;
-	}
-
-	#nav-secondary {
-
-		ul {
-			text-align: center;
-			margin: 0 auto;
-			padding: 0;
-
-			li {
-				float: left;
-				margin: 0 20px 0 0;
-			}
-		}
 	}
 }
 
@@ -184,10 +146,6 @@ body {
 			}
 		}
 
-		#about, #promo {
-			border-top-width: 1px;
-			border-top-style: solid;
-		}
 	}
 }
 
@@ -206,158 +164,6 @@ body {
 
 			p {
 				display: block;
-			}
-		}
-
-		#about, #promo {
-			padding-top: 60px;
-			border: none;
-		}
-	}
-}
-
-// eversearch
-#oncall {
-	display: none;
-	position: fixed;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	height: 100%;
-	width: 100%;
-	z-index: 200;
-
-	.search {
-		margin: 0 auto;
-		margin-top: 25%;
-	}
-}
-
-// forms and fields
-.search {
-	outline: none;
-	width: 100%;
-
-	input {
-		padding: 0;
-		background-color: inherit;
-		border: none;
-		margin: 15px;
-		outline: none;
-		height: 30px;
-		width: calc(100% - 96px);
-	}
-
-	.button {
-		height: 60px;
-		width: 60px;
-		padding: 0;
-		float: right;
-		margin: 0;
-
-		input {
-			display: none;
-		}
-
-	}
-}
-
-.field {
-	outline: none;
-	width: 100%;
-
-	input, textarea {
-		background-color: inherit;
-		border: none;
-		margin: 15px;
-		outline: none;
-		width: calc(100% - 36px);
-	}
-
-	input {
-		height: 30px;
-	}
-
-	textarea {
-		height: 90px;
-		resize: none;
-	}
-
-}
-
-.check, .radio {
-	width: 100%;
-
-	input {
-		margin-right: 15px;
-		margin-bottom: 10px;
-	}
-}
-
-.button {
-	height: 60px;
-	width: 100%;
-	padding: 0;
-}
-
-// dropdown select
-
-.selection {
-   -webkit-appearance: none;
-   -moz-appearance: none;
-   appearance: none;
-	 width: 100%;
-	 padding: 20px;
-	 outline: none;
-}
-
-
-.dropdown-menu {
-	ul {
-		background-color: inherit;
-		border: none;
-		height: 30px;
-		margin: 0;
-		padding: 0;
-
-		li {
-			width: 100%;
-			position:relative;
-			float:left;
-			margin:0;
-			padding:0;
-
-			a {
-				margin: 15px;
-				height: 30px;
-				line-height: 30px;
-				display: block;
-			}
-
-			ul {
-				width: 100%;
-				z-index: 50;
-				display:none;
-				position:absolute;
-				height: inherit;
-				overflow: hidden;
-
-				li {
-					width: 100%;
-
-					a {
-						margin: 0px;
-						padding: 5px 15px 5px 15px;
-					}
-				}
-			}
-		}
-
-		li:hover
-		{
-			ul {
-				display:block
 			}
 		}
 	}

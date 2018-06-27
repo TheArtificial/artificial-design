@@ -34,20 +34,9 @@ body.index #header .flex.container {
 	height: 100vh;
 
 	&>.container {
-		padding-top: 68px;
-		height: calc(100vh - 68px);
+		padding-top: 120px;
+		height: calc(100vh - 120px);
 
-		.slide-panel-image {
-			height: 75%;
-			// margin-top: 68px;
-			background-size: contain;
-			background-repeat: no-repeat;
-			background-position: center;
-		}
-
-		.slide-panel-caption {
-			height: 25%;
-		}
 	}
 }
 
