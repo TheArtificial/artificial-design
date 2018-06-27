@@ -1,0 +1,161 @@
+@import "_artificial-colors.scss";
+
+.cocktails {
+  background-color: $palest-lime;
+
+  #content {
+    padding-bottom: 0;
+
+    p, h1, h2, h3, h4, li, a { color: $darkest-grass; }
+
+    .title, .drinkname, .bartender, .recipe-section, .nav-links { font-family: "Noto Serif", Georgia, Times, serif; }
+    .date { font-family: "Barlow", Helvetica, Arial, sans-serif; }
+
+    h2 { font-size: 20px; }
+    h3 { font-weight: 300; }
+    h3, p, li { font-size: 16px; }
+    h4 { font-size: 14px; }
+
+    .title {
+      font-size: 54px;
+      font-style: normal;
+    }
+
+    .recipe-section {
+      text-transform: uppercase;
+      margin-top: 40px;
+      margin-bottom: 5px;
+    }
+
+    .rating {
+      width: 100px;
+      margin: 10px 0 20px 0;
+    }
+
+    .nav-links {
+      border: 1px solid $darkest-grass;
+      border-radius: 4px;
+      padding-top: 6px;
+      display: block;
+    }
+
+    .nav-links:hover {
+      background-color: $pale-lime;
+    }
+  }
+
+  .legend {
+    border: 30px solid transparent;
+    border-image: url(/cocktails/images/frame.svg) 30 30 30 30 fill stretch;
+
+    td {
+      padding: 8px;
+      color: $darkest-grass;
+    }
+
+    td.clip {
+      width: 35%;
+    }
+  }
+
+  .cocktail-preview {
+    border: 30px solid transparent;
+    border-image: url(/cocktails/images/frame.svg) 30 30 30 30 fill stretch;
+  }
+
+  .cocktail-preview:hover {
+    border-image: url(/cocktails/images/frame-hover.svg) 30 30 30 30 fill stretch;
+  }
+
+  #header {
+    background-color: $palest-lime;
+
+    #logo a { color: $darkest-grass; }
+    #nav-primary {
+      ul {
+        li {
+          a { color: $darkest-grass; }
+          a:hover { color: $dark-grass; }
+        }
+      }
+    }
+  }
+
+  #footer {
+    background-color: $darkest-grass;
+
+    #artificial a svg path, #artificial a svg polygon, #artificial a svg rect { fill: $palest-lime; }
+    p, .small-title { color: $pale-lime; }
+    a { color: $palest-lime; }
+    a:hover { color: $pale-lime; }
+  }
+}
+
+.glass {
+  margin-bottom: 40px;
+  background-size: contain;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+}
+
+
+.cocktail-preview {
+  .glass {
+    margin-bottom: 40px;
+
+    .contents {
+      opacity: 0;
+      transition: opacity .2s linear;
+    }
+  }
+
+  &:hover {
+    .contents {
+      opacity: 1;
+      transition: opacity .2s linear;
+    }
+  }
+}
+
+.local-nav {
+  padding-bottom: 60px;
+  text-align: center;
+}
+
+/*interior page scss*/
+
+.recipe {
+  padding-bottom: 40px;
+
+  ul { padding-left: 0; }
+}
+
+.legend {
+  .line {
+    clear: both;
+    img {
+      display: inline-block;
+    }
+    p { display: inline-block;
+    }
+  }
+}
+
+
+
+.bleed.kamila { background-image: url(/cocktails/images/bartenders/kamila.png); }
+.bleed.natalia { background-image: url(/cocktails/images/bartenders/natalia.png); }
+.bleed.hans { background-image: url(/cocktails/images/bartenders/hans.png); }
+.bleed.ariane { background-image: url(/cocktails/images/bartenders/ariane.png); }
+.bleed.manjari { background-image: url(/cocktails/images/bartenders/manjari.png); }
+.bleed.nathalie { background-image: url(/cocktails/images/bartenders/nathalie.png); }
+.bleed.shannon { background-image: url(/cocktails/images/bartenders/shannon.png); }
+.bleed.carol { background-image: url(/cocktails/images/bartenders/carol.png); }
+.bleed.susana { background-image: url(/cocktails/images/bartenders/susana.png); }
+.bleed.katinka { background-image: url(/cocktails/images/bartenders/katinka.png); }
+
+.bleed.bartender {
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+}

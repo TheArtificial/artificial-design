@@ -1,0 +1,59 @@
+<%
+wrap_layout 'site_layout' do
+  username = current_page.path.split('/').last.gsub(/.html$/, '')
+%>
+
+<section class="content">
+  <div id="person" class="bleed turquoise-palegrass">
+    <div class="flex container">
+      <div class="col-4">
+        <div class="person-logo"><%= get_logo_svg(username) %></div>
+      </div>
+
+      <div class="col-7 left-1 section">
+        <div class="padded">
+          <h1 class="title"><%= current_page.data.title %></h1>
+<%
+    social_links = []
+    if current_page.data.linkedin
+      social_links << link_to("linkedin", "https://linkedin.com/in/#{current_page.data.linkedin}")
+    end
+    if current_page.data.twitter
+      social_links << link_to("twitter", "https://twitter.com/#{current_page.data.twitter}")
+    end
+    # social_html = social_links.join(" | ").html_safe
+    if social_links.count > 0
+%>
+          <ul class="metadata"><% social_links.each {|link| concat content_tag(:li, link).html_safe } %></ul>
+<%
+    end
+%>
+        </div>
+        <div class="padded">
+          <p class="small-statement"><%= "&ldquo;#{current_page.data['quote']}&rdquo;" %></p>
+        </div>
+        <div class="padded">
+          <%= yield %>
+        </div>
+        <div class="padded">
+          <h2 class="">Logo Story</h2>
+          <%= Tilt['markdown'].new {current_page.data['logo-story']}.render %>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section bleed darkest-grey">
+    <div class="flex container">
+      <div class="col-12">
+        <div class="padded light-text center">
+          <h2 class="small-title">Posts by <%= current_page.data.title %></h2>
+        </div>
+      </div>
+    </div>
+    <div class="container packery padded-bottom" id="posts">
+			<%= render_cards(cards_for_author(username)) %>
+    </div>
+</div>
+</section>
+
+<% end %>

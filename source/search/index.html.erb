@@ -1,0 +1,54 @@
+---
+title: Search
+noindex: true
+---
+<% content_for :javascript_tags do %>
+	<%= javascript_include_tag 'lunr', 'mustache','cards','search', defer: true %>
+<% end %>
+
+<section id="content">
+
+	<div class="bleed">
+		<div class="flex container">
+			<div class="col-10 left-1 right-1 section-title">
+				<div class="padded center">
+					<h1 class="title">Search</h1>
+				</div>
+				<div class="padded center" id="query">
+					<form id="search-form" method="get">
+						<input name="q" type="search">
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container packery padded bottom" id="results">
+
+	</div>
+
+</section>
+
+<script>
+  // parse querystring value
+  function paramValue(query_param) {
+    var results = new RegExp('[\\?&]' + query_param + '=([^&#]*)').exec(window.location.href);
+    return results ? results[1] : false;
+  }
+
+  $(document).ready(function() {
+		var query;
+		var $results = $('#results');
+		$("#search-form").submit(function(e){
+	    e.preventDefault();
+			query = $("input[type='search'][name='q']").val();
+	    lunrSearch(query, $results);
+		});
+
+		query = paramValue('q');
+		if (query) {
+			$("input[type='search'][name='q']").val(query);
+			lunrSearch(query, $results);
+		}
+  });
+</script>

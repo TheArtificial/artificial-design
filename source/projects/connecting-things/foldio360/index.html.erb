@@ -1,0 +1,77 @@
+---
+layout: projects/connecting-things/_thing_layout
+title: Foldio 360
+preview: thing/off.png
+date: 2018-02-27
+published: false
+---
+<p>
+Foldio360 is a connected turntable to capture 360 images of small objects from a smartphone or a camera. Launched in 2016 by OrangeMonkie, the rotating platform connects with Bluetooth and IR sensors.
+</p>
+
+<h2 class="subtitle">
+  <span class="sentence">The connection process is </span>quick and easy
+</h2>
+<p>
+To connect the turntable, the user must plug the platform into a power source, download Foldio360 app and log in. The app shows the camera view of the user’s phone and a banner indicating the status of the turntable. On the first launch, the banner shows that Foldio360 is not connected. If the user selects the device’, an overlay card shows up in the app and displays the available turntable. Once the user taps the turntable in the list and after a few seconds, the pop up overlay disappears to reveal the camera view. The user can now control the turntable from the app. Easy!
+</p>
+
+<!-- <h2 class="subtitle">
+  <span class="sentence">The security is </span>low
+</h2>
+<p>
+The connections at the OS and at the software are not verified. The connection process is very easy and quick, but if a user would have two turntables, it would be easy to connect one instead of the other by mistake. Pictures are stored in the phone library unless the user uploads them online. Also because the Foldio 360 account is protected by a password, a media leakage is unlikely to happen.
+</p>
+
+<h2 class="subtitle">
+  <span class="sentence">The resilience is </span>okay
+</h2>
+<p>
+The connection between the app and the turntable is stable if the user’s phone is connected to the internet and if the user stays within the Bluetooth range.
+</p> -->
+
+<script>
+var flowSteps = [
+  {
+    caption: "Foldio 360 is plugged into power, begins broadcasting Bluetooth",
+    thingImg: "thing/blue_short.gif",
+    networkAnimations: ["actors/noWifi.json", "Thing_broadcasts.json"],
+    screenImg: "screens/01_signin.png"
+  },
+  {
+    caption: "User enters Foldio 360 account credentials in app",
+    networkAnimations: ["actors/noWifi.json", "Thing_broadcasts_loop.json", "AppCloud.json"],
+    screenImg: "screens/02_login.png"
+  },
+  {
+    caption: "User is logged into Foldio 360 account in app",
+    networkAnimations: ["actors/noWifi.json","Thing_broadcasts_loop.json", "stills/AppCloud.json"],
+    screenImg: "screens/03_loggedin.png"
+  },
+  {
+    caption: "User initiates set up in app, OS listens for Bluetooth products" ,
+    networkAnimations: ["actors/noWifi.json", "Thing_broadcasts_loop.json", "ThingOS_discovery.json", "stills/AppCloud.json"],
+    screenImg: "screens/04_home.png"
+  },
+  {
+    caption: "App discovers Foldio 330 turntable",
+    networkAnimations: ["actors/noWifi.json", "ThingOS_discovery_loop.json", "stills/AppCloud.json"],
+    screenImg: "screens/05_select_device.png"
+  },
+  {
+    caption: "User selects Foldio 360 turntable in app, turntable and OS are pairing",
+    networkAnimations: ["actors/noWifi.json","ThingOS_pair.json","stills/AppCloud.json"],
+  },
+  {
+    caption: "Foldio 360 turntable and OS are paired, app shows indeterminate progress indicator",
+    networkAnimations: ["actors/noWifi.json","ThingOS_unverified.json","stills/AppCloud.json"],
+  },
+  {
+    caption: "App shows Foldio 360 turntable and app are connected, turntable light blinks",
+    thingImg: "thing/blue_long.gif",
+    networkAnimations: ["actors/noWifi.json","stills/ThingOS_unverified.json","stills/AppCloud.json", "ThingApp_verified.json"],
+    screenImg: "screens/06_connected.png"
+  },
+
+]
+</script>

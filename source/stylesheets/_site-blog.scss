@@ -1,0 +1,222 @@
+.blog-preview {
+
+  .meta {
+    background-color: $white;
+    * {
+      color: $cool-grey-90;
+    }
+
+    padding-top: 32px;
+    padding-bottom: 36px;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .summary {
+    padding: 24px;
+    background-color: $white;
+    color: $cool-grey-90;
+  }
+}
+
+.blog-preview.no-image {
+  .meta {
+    background-color: $cool-grey-70; // default for unknown category
+    * {
+      color: $white
+    }
+  }
+}
+
+.blog-preview.no-image.inspiration .meta {
+  background-color: $turquoise;
+  background: linear-gradient(to bottom left, $pale-grass, $turquoise);
+}
+
+.blog-preview.no-image.process .meta {
+  background-color: $tulip;
+  background: linear-gradient(to bottom left, $pale-pumpkin, $tulip);
+
+}
+
+.blog-preview.no-image.news .meta {
+  background-color: $pumpkin;
+  background: linear-gradient(to bottom left, $pale-dandelion, $pumpkin);
+}
+
+.blog-preview.no-image.thoughts .meta {
+  background-color: $grape;
+  background: linear-gradient(to bottom, $pale-tulip, $grape);
+}
+
+
+
+.blog:not(.blog_index) {
+
+  #content {
+
+    // the background of the masthead will be set in-page
+    #masthead {
+      height: 400px;
+      background-position: center center;
+      background-repeat: repeat-x;
+    }
+
+    // if we have a masthead, we want to protrude into it
+    &.with-masthead {
+      .flex.container {
+        margin-top: -100px;
+        background-color: $white;
+      }
+    }
+
+    // for mobile
+    @media only screen and (min-device-width: 320px) {
+    	h2 {
+        font-size: 32px;
+    		line-height: 36px;
+        padding-top: 48px;
+    		padding-bottom: 24px;
+        text-align: center;
+    	}
+
+    	h3 {
+    		font-size: 18px;
+    		line-height: 24px;
+        padding-top: 16px;
+        padding-bottom: 16px;
+    	}
+
+    	h4 {
+    		font-size: 14px;
+    		line-height: 28px;
+    		padding-top: 16px;
+        padding-bottom: 8px;
+    	}
+
+    	h5 {
+    		font-size: 12px;
+    		line-height: 14px;
+        padding-top: 16px;
+        padding-bottom: 8px;
+        text-transform: uppercase;
+    	}
+
+      p, ul, li, td {
+        font-size: 14px;
+        line-height: 24px;
+      }
+
+      p {
+        padding-bottom: 16px;
+      }
+
+      table {
+        margin-bottom: 30px;
+      }
+
+      td {
+        padding: 0 20px 0 0;
+
+        img {
+          padding-top: 5px;
+        }
+
+      }
+
+      ul {
+        list-style-type: circle;
+      }
+
+      hr {
+        margin-top: 20px;
+        margin-bottom: 40px;
+        border-bottom: 1px solid $cool-grey-20;
+        border-top: none;
+        border-right: none;
+        border-left: none;
+      }
+    }
+
+    // for tablet
+    @media only screen and (min-device-width: 768px) {
+    	#logo {
+    		font-size: 26px;
+    	}
+
+    	h2 {
+    		font-size: 28px;
+    		line-height: 32px;
+    	}
+
+    	h3 {
+    		font-size: 20px;
+    		line-height: 26px;
+    	}
+
+    	h4 {
+    		font-size: 16px;
+    		line-height: 26px;
+    	}
+
+    	h5 {
+    		font-size: 12px;
+    		line-height: 14px;
+    	}
+
+    	p, ul, li, td {
+    		font-size: 14px;
+    		line-height: 24px;
+    	}
+    }
+
+    // for desktop
+    @media only screen and (min-width: 960px) {
+
+    	h2 {
+    		font-size: 32px;
+    		line-height: 36px;
+    	}
+
+    	h3 {
+    		font-size: 20px;
+    		line-height: 26px;
+    	}
+
+    	h4 {
+    		font-size: 14px;
+    		line-height: 28px;
+    	}
+
+    	h5 {
+    		font-size: 12px;
+    		line-height: 14px;
+    	}
+
+    	p, li, ul, td {
+    		font-size: 14px;
+    		line-height: 28px;
+    	}
+    }
+
+    img {
+      padding-top: 40px;
+      width: 100%;
+      float: none;
+    }
+
+    // this has to be used with explicit HTML
+    img.float-left  {
+      width: 48%;
+      padding: 20px 20px 10px 0;
+      float: left;
+    }
+
+    // this also has to be used with explicit HTML
+    img.small-centered {
+      width: 33.333%;
+      margin-left: 33.333%;
+      clear: both;
+    }
+  }
+}
