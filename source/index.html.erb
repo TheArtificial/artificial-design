@@ -20,14 +20,13 @@ nofeed: true
 
 <script>
   $( document ).ready(function() {
-    scrollspy('#nav-panels', $(window).height()/2, tweenColor);
+    scrollspy('.slide-panel', $(window).height()/2, tweenColor);
     tweenColor($('#strategy'),0);
-    updatePagination($('#nav-panels a'), 'strategy');
     $('.slide-panel').css('background','none');
   });
 
   function tweenColor(currentElement, offset) {
-    console.log(currentElement);
+    console.log('in tweenColor', currentElement);
     var bgColor = jQuery.Color(currentElement.data('background-color')),
         overlayColor = jQuery.Color(currentElement.data('overlay')),
         nextElement = currentElement.next('.slide-panel');
@@ -429,7 +428,7 @@ nofeed: true
     </div>
   </div>
 
-  <div class="slide-panel bleed sky" data-background-color="#95B3CE" data-overlay="#95B3CE" id="clients">
+  <div class="slide-panel bleed sky" data-background-color="#95B3CE" data-overlay="#95B3CE" id="lorem">
     <div class="flex container">
       <div class="col-10 right-2">
         <div class="padded">
