@@ -26,24 +26,15 @@ nofeed: true
   });
 
   function tweenColor(currentElement, offset) {
-    console.log('in tweenColor', currentElement);
     var bgColor = jQuery.Color(currentElement.data('background-color')),
-        overlayColor = jQuery.Color(currentElement.data('overlay')),
         nextElement = currentElement.next('.slide-panel');
     if (nextElement.length > 0) {
-      var nextBgColor = jQuery.Color(nextElement.data('background-color')),
-          nextOverlayColor = jQuery.Color(nextElement.data('overlay'));
+      var nextBgColor = jQuery.Color(nextElement.data('background-color'));
       bgColor = bgColor.transition(nextBgColor, offset);
-      overlayColor = overlayColor.transition(nextOverlayColor, offset);
     }
-    console.log(bgColor);
-    $('#background').css('background-color', bgColor);
     // $('body').css('background-color',currentElement.data('glitch'));
-    $('#header').css('background-color',overlayColor.alpha(1.0).toRgbaString());
-    $('#nav-panels li svg *').css('fill',overlayColor.toHexString());
-
-    // $('#logo').text(offset);
-    // $('#logo').text(currentElement.attr('id') + ': ' + currentElement.data('gradient-top') + '-' + currentElement.data('gradient-bottom') + ': ' + $('#background').css('background-image'));
+    $('#background').css('background-color', bgColor);
+    $('#header').css('background-color',bgColor);
   }
 
 </script>
@@ -52,7 +43,7 @@ nofeed: true
 
 <div class="bleed slide-container">
 
-  <div class="slide-panel bleed aqua" data-background-color="#B7E5DD" data-overlay="#B7E5DD" id="strategy">
+  <div class="slide-panel bleed aqua" data-background-color="#B7E5DD" id="strategy">
     <div class="flex container">
       <div class="col-10 right-2">
         <div class="padded">
@@ -73,7 +64,7 @@ nofeed: true
     </div>
   </div>
 
-  <div class="slide-panel bleed sea" data-background-color="#A6CCD5" data-overlay="#A6CCD5" id="clients">
+  <div class="slide-panel bleed sea" data-background-color="#A6CCD5" id="clients">
     <div class="flex container">
       <div class="col-10 right-2">
         <div class="padded">
@@ -428,7 +419,7 @@ nofeed: true
     </div>
   </div>
 
-  <div class="slide-panel bleed sky" data-background-color="#95B3CE" data-overlay="#95B3CE" id="lorem">
+  <div class="slide-panel bleed sky" data-background-color="#95B3CE" id="lorem">
     <div class="flex container">
       <div class="col-10 right-2">
         <div class="padded">
