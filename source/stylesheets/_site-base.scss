@@ -3,7 +3,6 @@
 
 @media only screen and (min-device-width: 320px) {
 	#header {
-		background-color: $mint;
 
 		#logo {
 			padding-top: 18px;
@@ -66,21 +65,14 @@
 			}
 		}
 	}
-
-	#nav-secondary {
-
-		ul {
-			li {
-				a {
-					color: $cool-grey-30;
-				}
-				a:hover {
-					color: $cool-grey-40;
-				}
-			}
-		}
-	}
 }
+
+#header { background-color: $mint; }
+.work_vanmoof #header, .work_3dsystems #header {
+	background-color: $sea;
+}
+
+
 
 // content
 body {
@@ -363,6 +355,10 @@ svg *.content{ fill: $cool-grey-40; }
 	padding: 20px 0 20px 0;
 }
 
+.offset-top {
+	margin-top: -240px;
+}
+
 // background colors
 
 .white { background-color: $white; }
@@ -379,4 +375,6 @@ svg *.content{ fill: $cool-grey-40; }
 }
 
 // text & svg colors
-.svg-deep-violet{ fill: $deep-violet; }
+.svg-deep-violet {
+	fill: $deep-violet;
+}

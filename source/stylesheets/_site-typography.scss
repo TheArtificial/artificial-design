@@ -3,12 +3,12 @@
 
 p, ul, li, h1, h2, h3, h4, h5 { margin: 0; }
 
-#logo, .title, .subtitle, .heading, .subheading, .statement, { font-family: "Crimson", Georgia, Times, serif; }
+#logo, .title, .subtitle, .small-title, .heading, .subheading, .statement, .summary, .team { font-family: "Crimson", Georgia, Times, serif; }
 
-.title, .subtitle, .heading, .subheading, .statement { font-weight: 400; }
+.title, .subtitle, .small-title, .heading, .subheading, .statement, .summary { font-weight: 400; }
 #logo, .label, .link-stack { font-weight: 600; }
 
-.title, .label { text-transform: uppercase; }
+.title, .small-title, .label { text-transform: uppercase; }
 
 
 .link-stack {
@@ -18,6 +18,12 @@ p, ul, li, h1, h2, h3, h4, h5 { margin: 0; }
     a {
       text-decoration: none;
     }
+  }
+}
+
+.team {
+  li {
+    padding-bottom: 0;
   }
 }
 
@@ -222,6 +228,11 @@ ul { list-style-type: none; }
 		line-height: 80px;
 	}
 
+  .small-title {
+    font-size: 48px;
+    line-height: 60px;
+  }
+
   .heading {
     font-size: 48px;
     line-height: 60px;
@@ -230,6 +241,11 @@ ul { list-style-type: none; }
   .subheading {
     font-size: 20px;
     line-height: 28px;
+  }
+
+  .summary {
+    font-size: 32px;
+    line-height: 40px;
   }
 
 	.statement {
@@ -242,4 +258,9 @@ ul { list-style-type: none; }
 		font-size: 14px;
 		line-height: 14px;
 	}
+
+  .team li {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
