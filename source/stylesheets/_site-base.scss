@@ -107,6 +107,20 @@
 	color: $sky;
 }
 
+.blog_index #header {
+	background-color: $aquamarine;
+}
+
+.blog_index #footer-logo {
+	fill: $aquamarine;
+}
+
+.blog_index #footer-notes p {
+	color: $aquamarine;
+}
+
+
+
 
 
 
@@ -156,19 +170,16 @@ body {
 
 // card sizing for case studies and experiments
 @media only screen and (min-device-width: 320px) {
-	.case-study {
+	.case-study, .blog-feature {
 		min-height: 380px;
-		border-radius: 4px
+		border-radius: 2px
 	}
-	.experiment { height: 320px; }
 }
 @media only screen and (min-device-width: 768px) {
-	.case-study { min-height: 320px; height: 400px; }
-	.experiment { height: 240px; }
+	.case-study, .blog-feature { min-height: 320px; height: 400px; }
 }
 @media only screen and (min-width: 960px) {
-	.case-study { height: 340px; }
-	.experiment { height: 320px; }
+	.case-study, .blog-feature { height: 340px; }
 }
 
 // case studies artifacts list
@@ -385,6 +396,10 @@ svg *.content{ fill: $cool-grey-40; }
 	background-color: $sky;
 	color: $deep-violet;
 	text-align: center;
+}
+
+.blog-feature {
+	background-color: $periwinkle;
 }
 
 .svg-padding {
