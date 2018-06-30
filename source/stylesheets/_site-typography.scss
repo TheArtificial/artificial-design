@@ -3,13 +3,13 @@
 
 p, ul, li, h1, h2, h3, h4, h5 { margin: 0; }
 
-#logo, .title, .small-subtitle, .small-title, .letters { font-family: "Crimson", Georgia, Times, serif; }
-#logo, .small-title, .subtitle, .letters, .label, .metadata, .link-stack { font-weight: 600; }
- .title, .description, .statement, .small-statement { font-weight: 400; }
- .title, .label { text-transform: uppercase; }
+#logo, .title, .subtitle, .heading, .subheading, .statement, { font-family: "Crimson", Georgia, Times, serif; }
 
-.small-statement p { padding-bottom: 24px; }
-.small-body { font-weight: 400; }
+.title, .subtitle, .heading, .subheading, .statement { font-weight: 400; }
+#logo, .label, .link-stack { font-weight: 600; }
+
+.title, .label { text-transform: uppercase; }
+
 
 .link-stack {
   padding-left: 0;
@@ -217,60 +217,29 @@ ul { list-style-type: none; }
 		line-height: 80px;
 	}
 
-	.small-title {
-		font-size: 24px;
-		line-height: 30px;
-		padding-bottom: 16px;
+  .subtitle {
+		font-size: 72px;
+		line-height: 80px;
 	}
 
-	.subtitle {
-		font-size: 24px;
-		line-height: 32px;
-	}
+  .heading {
+    font-size: 48px;
+    line-height: 60px;
+  }
 
-	.small-subtitle {
-		font-size: 20px;
-		line-height: 26px;
-	}
-
-	.description {
-		font-size: 24px;
-		line-height: 32px;
-	}
-
-	.letters {
-		font-size: 120px;
-		line-height: 200px;
-	}
+  .subheading {
+    font-size: 20px;
+    line-height: 28px;
+  }
 
 	.statement {
-		font-size: 40px;
-		line-height: 48px;
-		padding-bottom: 20px;
-	}
-
-	.small-statement, .small-statement * {
-		font-size: 32px;
-		line-height: 40px;
+		font-size: 24px;
+		line-height: 36px;
+		padding-bottom: 40px;
 	}
 
 	.label {
 		font-size: 14px;
 		line-height: 14px;
-	}
-
-	.snippit {
-		font-size: 16px;
-		line-height: 22px;
-	}
-
-	.large-body {
-		font-size: 16px;
-		line-height: 24px;
-	}
-
-	.small-body {
-		font-size: 14px;
-		line-height: 18px;
 	}
 }

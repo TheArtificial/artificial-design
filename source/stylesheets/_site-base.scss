@@ -89,7 +89,7 @@ body {
 	background-color: $white;
 
 	a {
-		color: $sea;
+		color: $deep-violet;
 	}
 }
 
@@ -101,7 +101,8 @@ body {
 
 .extra-padded { padding: 48px 16px 24px 16px; }
 .extra-vertical { padding-top: 40px; padding-bottom: 40px; }
-.padded-bottom { padding-bottom: 80px; }
+.extra-bottom { padding-bottom: 80px; }
+.extra-top { padding-top: 80px; }
 
 .small-statement * {
 	color: $cool-grey-40;
@@ -112,40 +113,34 @@ body {
 	}
 }
 
+.page-intro {
+	padding-top: 100px;
+}
+
+.top-tall {
+	height: 640px;
+}
+
+.top-short {
+	height: 460px;
+}
+
 
 // card sizing for case studies and experiments
 @media only screen and (min-device-width: 320px) {
 	.case-study {
-		min-height: 480px;
+		min-height: 380px;
 		border-radius: 4px
 	}
 	.experiment { height: 320px; }
 }
 @media only screen and (min-device-width: 768px) {
-	.case-study { min-height: 400px; height: 400px; }
+	.case-study { min-height: 320px; height: 400px; }
 	.experiment { height: 240px; }
 }
 @media only screen and (min-width: 960px) {
-	.case-study { height: 480px; }
+	.case-study { height: 340px; }
 	.experiment { height: 320px; }
-}
-
-.card-rule {
-	margin: auto;
-	margin-bottom: 16px;
-	width: 40px;
-	height: 1px;
-	display: block;
-	background-color: $white;
-}
-
-.experiment {
-	background-color: $cool-grey-90;
-	opacity: 0.9;
-	color: $white;
-	a {
-		color: $white;
-	}
 }
 
 // case studies artifacts list
@@ -331,30 +326,41 @@ svg *.content{ fill: $cool-grey-40; }
 }
 
 .card-stack {
-	margin-top: -160px;
+	margin-top: -240px;
+}
+
+.link-stack a {
+	color: $deep-violet;
 }
 
 .blog-title {
 	margin-top: 100px;
 }
 
-
-.service-box {
-	border: 1px solid $cool-grey-80;
-	border-radius: 2px
-}
-
-.service-box:hover {
-	border: 1px solid $cool-grey-70;
-
-}
-
-// card gradient colors
-.case-study {
+.statement a {
+	background-color: $sea;
 	color: $deep-violet;
+	text-decoration: none;
+}
+
+// card colors
+.case-study {
+	background-color: $sea;
+	color: $deep-violet;
+	text-align: center;
 	img {
 		margin-bottom: 10px;
 	}
+}
+
+.expertise {
+	background-color: $sky;
+	color: $deep-violet;
+	text-align: center;
+}
+
+.svg-padding {
+	padding: 20px 0 20px 0;
 }
 
 // background colors
