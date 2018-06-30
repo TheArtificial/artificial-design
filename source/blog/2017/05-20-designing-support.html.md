@@ -1,8 +1,6 @@
 ---
 title: 'Designing Service'
-category: thoughts
 tags: servicedesign, design, airport
-author: shannon
 preview: preview@2x.png
 ---
 

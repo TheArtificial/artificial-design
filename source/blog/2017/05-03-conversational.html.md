@@ -1,10 +1,7 @@
 ---
 title: 'Join the Conversational Interface'
-category: process
-tags: UI, design, chatbot, AI, interface
-author: shannon
+tags: UI, design, chatbot, AI, interface, feature
 preview: preview@2x.png
-masthead: masthead.png
 ---
 
 For the past six months, we’ve been designing an app for a product that doesn’t already exist on the market, and that likely won’t be ready for consumers for another year or two. The product itself is understandably super secret, but the story is interesting even if you don’t know the details of the main character.
@@ -15,7 +12,7 @@ Our engagement began fairly early in the process. While design was already being
 
 The product replaces one of the humans in a two-person experience, so we began by observing that experience. We documented the key moments across several users’ experiences and documented their positive or negative affect throughout. We then observed the moments and reactions of users with the existing product. We aggregated and overlaid these experiences to highlight gaps in the new product’s feature set as well as to better understand the deltas in how the users perceived their experiences (with the human versus with the product).
 
-![Experience Journey](05-03-conversational/CUI_01.png)
+<figure><img src="conversational/CUI_01.png" alt="Experience Journey"></figure>
 
 To summarize the experience without giving anything away, the human/product guides and inspires the user through imagery, the human/product performs the service, and at the end the human/product makes sure that the user is happy with the result. Breaking the experience into these discrete pieces made it easier to then look at similar features in other products.
 
@@ -25,7 +22,7 @@ So we stayed focused on the human version of this experience. What does the huma
 
 We experimented with many different approaches, and came to the now-obvious conclusion that the best interface to create a human-like interaction with the user was a conversational UI. Then we ran into a new problem: most of the examples of conversational UI that we found were being used to sell products or to provide customer service.
 
-![Conversational Interface](05-03-conversational/CUI_02.png)
+<figure><img src="conversational/CUI_02.png" alt="Conversational Interface"></figure>
 
 So we did what we always do, we tried some things and made some mistakes. And then we wrote about our experience so that others could learn from it:
 
@@ -39,7 +36,7 @@ In most situations, we also decided against free-form text entry, opting instead
 
 Of course there are places in the experience where we wanted to give our user the opportunity to express himself. We made sure that these moments occurred during low-intensity parts of the experience where he could give the interface his full attention. Then we gave him the opportunity to express himself not just with text, but also with photos.
 
-![Needy AI](05-03-conversational/CUI_03.png)
+<figure><img src="conversational/CUI_03.png" alt="Needy AI"></figure>
 
 ## Communicate beyond Words
 
@@ -47,7 +44,7 @@ It would have been easy to assume that, because we were designing a conversation
 
 The conversation we designed with our user became multi-dimensional as we added in data visualizations, 3D renderings, photos, videos, illustrations, and more. We even went so far as to add non-language ways for the user to provide feedback to the interface. But still, the focus was on the steady back and forth, action and response.
 
-![Beyond Words](05-03-conversational/CUI_04.png)
+<figure><img src="conversational/CUI_04.png" alt="Beyond Words"></figure>
 
 ## Define Rules of Conversation
 
@@ -59,6 +56,6 @@ Defining the rules around how the AI uses the interface is as important as desig
 
 And who knows, the rules that govern the AI could even provide direction to humans performing similar functions.
 
-![Waiting](05-03-conversational/CUI_05.png)
+<figure><img src="conversational/CUI_05.png" alt="Waiting"></figure>
 
 While we predict that the conversational UI trend will continue to grow, it’s important to remember that not all UI needs to be conversational. Consider the experience you’re trying to create. If it couldn’t be handled through a conversation in real life, it’s probably not going to magically work when translated to a screen.

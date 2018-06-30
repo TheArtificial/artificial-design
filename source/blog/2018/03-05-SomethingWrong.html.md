@@ -1,8 +1,6 @@
 ---
 title: 'Artificial Conversations: Something Is Wrong'
-category: thoughts
 tags: monday, morning, conversation, systems, design
-author: shannon
 ---
 
 This week's Monday morning conversation revolved around James Bridle's article [Something is wrong on the internet](https://medium.com/@jamesbridle/something-is-wrong-on-the-internet-c39c471271d2)

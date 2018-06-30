@@ -5,7 +5,7 @@ p, ul, li, h1, h2, h3, h4, h5 { margin: 0; }
 
 #logo, .title, .subtitle, .small-title, .heading, .subheading, .statement, .summary, .team { font-family: "Crimson", Georgia, Times, serif; }
 
-.blog:not(.blog_index) h2 {
+.blog:not(.blog_index) h2, .blog:not(.blog_index) h3 {
   font-family: "Crimson", Georgia, Times, serif;
   font-weight: 400;
 }

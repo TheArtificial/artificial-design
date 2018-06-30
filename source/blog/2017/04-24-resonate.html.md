@@ -1,10 +1,7 @@
 ---
 title: 'Thoughts That Resonate'
-category: thoughts
 tags: resonate, conference
-author: shannon
 preview: preview@2x.png
-masthead: masthead.png
 ---
 
 We've just wrapped up a week in Belgrade, a majority of which was spent at [Resonate](http://resonate.io/2017/). Aside from the meta-thoughts about how to run a conference – presentation synopses are helpful, panelists should at least appear to be aware of the panel's topic, and venues should have ample space and WiFi – there were a number of fun facts and provocations that we'll be taking home with us.
@@ -17,7 +14,7 @@ More than any specific thought, Régine's talk left me more determined to follow
 
 ## 02
 
-![Julie](04-24-resonate/Julie.jpg)
+<figure><img src="resonate/Julie.jpg" alt="Julie Freeman"></figure>
 
 [Julie Freeman](http://www.translatingnature.org) discussed how poachers can follow safari goers' Instagram posts to find elephants, rhinos, and other creatures with valuable parts, raising the question: _Should animals also have privacy?_
 
@@ -38,7 +35,7 @@ All of these nuances of human communication made me wonder: _What opportunities 
 
 ## 05
 
-![Ava and Maria](04-24-resonate/AvaAndMaria.jpg)
+<figure><img src="resonate/AvaAndMaria.jpg" alt="Ava and Maria"></figure>
 
 Ava Aghakouchak and Maria Paneta showed their thesis work about soft, wearable interfaces that light up and inflate.
 
@@ -52,7 +49,7 @@ When it comes to user interfaces, the same might also be said. Large companies c
 
 ## 07
 
-![Joana](04-24-resonate/Joana.png)
+<figure><img src="resonate/Joana.png" alt="Joana Moll"></figure>
 
 [Joana Moll](http://www.janavirgin.com) presented work that looked at hacking not only digital and data systems, but also human systems. In her piece [The Virtual Watchers](http://www.virtualwatchers.de/) she looked at the communities of people voluntarily patrolling the US-Mexico border via a crowdsourced video platform, and then interacted with them via Facebook groups.
 

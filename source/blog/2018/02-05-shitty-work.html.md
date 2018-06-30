@@ -1,8 +1,6 @@
 ---
 title: 'Artificial Conversations: Shitty Work'
-category: thoughts
 tags: monday, morning, conversation, portfolio
-author: shannon
 ---
 
 Like many agencies, The Artificial starts every week with a meeting to preview the upcoming week. This meeting covers project status, BD, and important calendar events. It is accompanied by breakfast. This week, we added something new to accompany this meeting: a design-oriented conversation.

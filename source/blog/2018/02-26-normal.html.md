@@ -1,8 +1,6 @@
 ---
 title: 'Artificial Conversations: Normal Design'
-category: thoughts
 tags: monday, morning, conversation, vanilla, design
-author: shannon
 ---
 
 This week's Monday morning conversation revolved around Frank Chimero's blog post [Plainness and Sweetness](https://frankchimero.com/blog/2017/plainness-and-sweetness/)

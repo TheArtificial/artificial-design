@@ -1,8 +1,6 @@
 ---
 title: 'Artificial Conversations: Undesigned Success'
-category: thoughts
 tags: monday, morning, conversation, Amazon, design
-author: shannon
 ---
 
 This week we discussed [Amazon's success](https://www.fastcodesign.com/90160960/the-design-theory-behind-amazons-5-6-billion-success) despite their lack of overt design.

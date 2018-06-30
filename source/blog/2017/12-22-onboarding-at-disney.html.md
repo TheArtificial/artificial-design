@@ -1,9 +1,6 @@
 ---
 title: 'Onboarding at Disney'
-category: thoughts
 tags: experience, design, UX, disney, princess
-author: shannon
-masthead: masthead.jpg
 preview: preview.png
 ---
 
@@ -11,7 +8,7 @@ This year’s Artificial holiday trip was to Disneyland Paris. The Disney theme 
 
 Our experience went something like this:
 
-![Experience Journey](12-22-onboarding-at-disney/ExperienceJourney.png)
+<figure><img src="onboarding-at-disney/ExperienceJourney.png" alt="experience journey"></figure>
 
 We arrived excited, and left exhausted. We rode roller coasters, spun in teacups, and watched pepper’s ghosts dance before us. We drank hot chocolate and kept our ears warm with Minnie Mouse hats. All in all, it was a good day. But one thing stood out to us in the cold, rainy Parisian winter: the lines.
 

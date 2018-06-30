@@ -1,8 +1,6 @@
 ---
 title: 'Artificial Conversations: Ethical Design'
-category: thoughts
 tags: monday, morning, conversation, ethics, design
-author: shannon
 ---
 
 This week we discussed design ethics as presented by [ind.ie](https://2017.ind.ie/ethical-design/)

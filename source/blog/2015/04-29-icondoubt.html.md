@@ -1,12 +1,12 @@
 ---
 title: "Icon Story: To Doubt"
-category: process
 tags: icon, design, doubt
-author: shannon
-masthead: main.png
+preview: main.png
 ---
 
 Here is the story of [Puchi Puchi’s](http://www.toicon.com/series/puchi-puchi) [to doubt](http://www.toicon.com/icons/puchi-puchi_doubt), which was a commissioned by one of our Kickstarter backers, Dominick Cancilla.
+
+<figure><img src="icondoubt/main.png" alt="to [doubt] from to [icon]"></figure>
 
 When I started on this one, my mind went first to the [movie](http://www.imdb.com/title/tt0918927/) with Meryl Streep and Philip Seymour Hoffman. The film (which is great, though not entirely appropriate for iconic representation) led me down the path of religious metaphors. Here, the opposite of doubt is faith, which has some [obvious iconic interpretations](http://www.toicon.com/icons/lines-and-angles_resurrect); however, no such obvious symbols exist for doubt.
 

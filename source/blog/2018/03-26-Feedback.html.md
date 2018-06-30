@@ -1,8 +1,6 @@
 ---
 title: 'Artificial Conversations: The Art of Feedback'
-category: thoughts
 tags: monday, morning, conversation, critique, feedback, design
-author: shannon
 ---
 
 This week we discussed [this article](https://www.thnk.org/insights/the-other-side-of-the-stick-how-to-receive-feedback/) from [THNK School of Creative Leadership](https://www.thnk.org) on receiving creative feedback.
