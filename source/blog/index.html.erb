@@ -1,23 +1,74 @@
 ---
-title: The Artificial blog
+title: Blog
 noindex: true
 ---
+
+<!-- page content -->
 <section id="content">
-	<div class="flex container">
-			<div class="col-12 section-title">
-			<div class="padded center">
-				<h1 class="title">Our Blog</h1>
-				<div class="small-statement">
-					<%= partial "introduction" %>
+	<div class="bleed sky top-short">
+		<div class="flex container page-intro">
+			<div class="col-8 right-4">
+				<div class="padded">
+					<p class="label">Strong Opinions Weakly Held</p>
+					<h1 class="title">A Few Featured Articles</h1>
 				</div>
 			</div>
 		</div>
 	</div>
 
-  <div class="container packery extra-bottom">
-		<% page_articles.each do |article| %>
-			<%= render_card(article) %>
+	<!-- cards -->
+	<div class="flex container card-stack extra-bottom">
+		<%
+		blog.articles.select{|a| a.tags.include?('feature')}.each_with_index do |article, i|
+			url = article.url
+			image_name = article.data.preview || article.data.masthead
+		    last_dot = url.rindex('.')
+			img_url = url[0...last_dot] + '/' + image_name
+		%>
+			<div class="<%= 'left-2 ' if i == 0 %>col-3">
+			
+			<a href="<%= url %>">
+				<div class="card blog-feature">
+					<div class="padded">
+						<img src="<%= img_url %>">
+						<%= article.title %>
+					</div>
+				</div>
+			</a>
+
+			</div>
 		<% end %>
+	</div>
+
+	<!-- blurb -->
+	<div class="flex container extra-bottom">
+		<div class="col-10 right-2">
+			<div class="padded">
+				<h2 class="heading">I'm currently writing The Experience Designer's Guidebook. Take a sneak peek.</h2>
+			</div>
+		</div>
+	</div>
+
+	<!-- listing -->
+	<div class="flex container extra-bottom">
+	<% page_articles.each do |article| %>
+		<div class="col-2 left-1">
+			<div class="padded">
+				<a href="<%= article.url%>" class="blog-date"><%= article.date.strftime('%Y.%m.%d') %></a>
+			</div>
+		</div>
+		<div class="col-7">
+			<div class="padded">
+				<a href="<%= article.url%>"  class="blog-title"><%= article.title %></a>
+			</div>
+		</div>
+		<div class="col-1">
+			<div class="padded">
+				<a href="<%= article.url%>" class="blog-arrow">➔</a>
+			</div>
+		</div>
+		</a>
+	<% end %>
 	</div>
 
 </section>
