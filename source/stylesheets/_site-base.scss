@@ -288,8 +288,20 @@ body {
 	color: $deep-violet;
 }
 
+.blog-stack a {
+	text-decoration: none;
+}
+
+a.blog-title {
+	font-weight: 600;
+}
+
 .blog-title {
 	margin-top: 100px;
+}
+
+a.arrow {
+	float: right;
 }
 
 .statement a {
