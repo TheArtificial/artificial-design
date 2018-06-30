@@ -14,7 +14,7 @@ While the final series feels of the same quality of the other icons on to [icon]
 
 _Note: We used an iPad Pro, Apple Pencil, and  [Adobe Illustrator Draw](https://www.adobe.com/products/draw.html). There are other tools you could use, but we found these the best at capturing the hand’s inconsistencies in pressure, direction, and speed._
 
-![Trace](06-26-hand-drawn/Collect.gif)
+<figure><img src="hand-drawn/Collect.gif" alt="collect metaphors"></figure>
 
 ## 1. Collect and Trace
 When doing a traditional icon series, it’s common for us to spend up to 50% redrawing and perfecting icons. That work has to be done up front for a hand-drawn series, where digital editing is not only difficult, but often results in spoiling the essence of hand-drawing. Starting strong is a must.
@@ -25,7 +25,7 @@ Resize all of the icons to fit the grid you’re designing to. If you’re worki
 
 Pull this reference sheet into your vector sketching tool and begin tracing.
 
-![Curate](06-26-hand-drawn/Curate.gif)
+<figure><img src="hand-drawn/Curate.gif" alt="curate"></figure>
 
 ## 2. Curate and Iterate
 Once you’ve traced all of the forms on your reference sheet, make the reference sheet invisible and print your sketches at the actual size you’d like the icons to be – for example, if you drew at 200%, print at 50%.
@@ -34,7 +34,7 @@ Once you’ve traced all of the forms on your reference sheet, make the referenc
 
 Repeat steps 1 and 2 until you’re happy with the set of metaphors you’ve collected.
 
-![Collecting Rules](06-26-hand-drawn/Rules.gif)
+<figure><img src="hand-drawn/Rules.gif" alt="collecting rules"></figure>
 
 ## 3. Create Rules
 Take a look through your initial sketches to identify what’s working and what’s not working, and **decide on a series of rules for the final icon series.** Some things to consider:
@@ -50,14 +50,14 @@ Take a look through your initial sketches to identify what’s working and what�
 
 Once you’re confident in your rules, it’s time to draw what will become your final icons.
 
-![Multiple Versions](06-26-hand-drawn/Trace.gif)
+<figure><img src="hand-drawn/Trace.gif" alt="multiple versions"></figure>
 
 ## 4. Trace Multiple Versions
 **Create a new reference sheet using the sketches from steps 1 and 2.** On this sheet, copy and paste each sketch at least twice, adjusting angles and sizes as necessary. Pull the reference sheet into your vector drawing tool and begin tracing, this time following the rules you established in step 3.
 
 Drawing each icon multiple times not only allows you to try different things, it also ensures that the weaker drawings won’t make their way into your final icon series.
 
-![Downselect](06-26-hand-drawn/Select.gif)
+<figure><img src="hand-drawn/Select.gif" alt="down-selection"></figure>
 
 ## 5. Select the Best
 Make your reference sheet invisible and print your forms again. **Examine them as a series and as individual metaphors.** Allow your intuition to make snap judgements about which icon drawings are weakest and remove those first. Then review all of the remaining drawings systematically and choose the strongest of those that you drew.
@@ -66,14 +66,14 @@ Make your reference sheet invisible and print your forms again. **Examine them a
 
 If you like different parts from multiple icon drawings, try combining them. Sometimes this works better than others.
 
-![Resize](06-26-hand-drawn/Resize.gif)
+<figure><img src="hand-drawn/Resize.gif" alt="resize"></figure>
 
 ## 6. Resize
 **Combine shapes into single forms and place each icon onto your final pixel grid.**
 
 Snap to pixel in each icon’s largest direction. Some icons might need to be larger or smaller depending on their overall weight. The line weights might get a bit inconsistent here. Don’t worry, we’ll get to that.
 
-![Final Tweaks](06-26-hand-drawn/Tweak.gif)
+<figure><img src="hand-drawn/Tweak.gif" alt="final tweaks"></figure>
 
 ## 7. Final Edits
 One last time, print out your icon series. This time, pay careful attention to line weight. Resizing to the pixel grid may have left some icons’ lines feeling heavier and others feeling lighter. **Use Illustrator’s Offset Path function to make the icon’s lines slightly thicker or thinner.**

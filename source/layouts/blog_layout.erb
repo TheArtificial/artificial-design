@@ -41,12 +41,12 @@
 
 <!-- page content -->
 <section id="content">
-	<div class="bleed aquamarine top-short">
+	<div class="bleed periwinkle top-short">
 		<div class="flex container page-intro">
 			<div class="col-8 right-4">
 				<div class="padded">
 					<p class="label"><%= current_page.date.strftime('%Y.%m.%d') %></p>
-					<h1 class="title"><%= current_page.title %></h1>
+					<h1 class="small-title"><%= current_page.title %></h1>
 				</div>
 			</div>
 		</div>
@@ -64,7 +64,7 @@
   <article class="flex container">
 
     <div class="col-12 extra-bottom">
-      <div class="padded">
+      <div class="padded extra-top">
         <article>
           <%= yield %>
         </article>

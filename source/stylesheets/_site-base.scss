@@ -67,6 +67,7 @@
 	}
 }
 
+// navigation color schemes
 #footer .container {
 	padding-top: 80px;
 }
@@ -119,8 +120,17 @@
 	color: $aquamarine;
 }
 
+.blog:not(.blog_index) #header {
+	background-color: $periwinkle;
+}
 
+.blog:not(.blog_index) #footer-logo {
+	fill: $periwinkle;
+}
 
+.blog:not(.blog_index) #footer-notes p {
+	color: $periwinkle;
+}
 
 
 
@@ -155,10 +165,8 @@ body {
 	}
 }
 
-.page-intro {
-	padding-top: 100px;
-}
 
+// page introductions
 .top-tall {
 	height: 640px;
 }
@@ -167,6 +175,9 @@ body {
 	height: 460px;
 }
 
+.page-intro {
+	padding-top: 100px;
+}
 
 // card sizing for case studies and experiments
 @media only screen and (min-device-width: 320px) {
@@ -175,112 +186,13 @@ body {
 		border-radius: 2px
 	}
 }
+
 @media only screen and (min-device-width: 768px) {
 	.case-study, .blog-feature { min-height: 320px; height: 400px; }
 }
+
 @media only screen and (min-width: 960px) {
 	.case-study, .blog-feature { height: 340px; }
-}
-
-// case studies artifacts list
-.bleed.artifacts {
-	padding: 24px 0 24px 0;
-	background-color: $cool-grey-10;
-	color: $cool-grey-90;
-	text-align: center;
-
-	h2 { margin-bottom: 20px; }
-}
-
-svg *.frame { fill: $cool-grey-90; }
-svg *.content{ fill: $cool-grey-40; }
-
-// laboratory styles
-.bleed.animal-party {
-	background-image: url('/laboratory/images/index_background.jpg');
-	background-repeat: no-repeat;
-	height: 100%;
-	position: fixed;
-	z-index: -100;
-	display: block;
-	background-size: 100%;
-}
-
-// image bg styles
-@media only screen and (min-device-width: 320px) {
-	.bleed.about-us {
-		background-image: url(/about/images/us.jpg);
-		min-height: 160px;
-		margin: auto;
-		background-position: top center;
-	}
-	.bleed.service-bg {
-		background-color: $cool-grey-90;
-		padding-top: 0px;
-		margin: auto;
-		background-position: bottom center;
-		color: $white;
-	}
-}
-
-@media only screen and (min-device-width: 768px) {
-	.bleed.about-us {
-		min-height: 360px;
-	}
-	.bleed.service-bg {
-		background-image: url(/services/images/studio.jpg);
-		padding-top: 100px;
-	}
-}
-
-@media only screen and (min-width: 960px) {
-	.bleed.about-us {
-		min-height: 480px;
-	}
-	.bleed.service-bg {
-		padding-top: 300px;
-	}
-}
-
-.map {
-	height: 400px;
-
-	.mapboxgl-popup-content {
-		padding: 10px;
-	}
-}
-
-.person-logo svg {
-	width: 100%;
-	height: 100%;
-}
-
-.services-button {
-	border: 1px solid $cool-grey-90;
-	border-radius: 5px;
-	text-align: center;
-	padding: 12px;
-	color: $cool-grey-90;
-}
-
-.job-requirements {
-	color: $cool-grey-40;
-	ul {
-		list-style-type: disc;
-	}
-}
-
-.tools {
-	text-align: center;
-	color: $white;
-
-	svg *.feather_een { fill: $white; }
-	svg { margin-bottom: 20px; }
-
-	ul {
-		margin: 0;
-		padding: 0;
-	}
 }
 
 // footer
@@ -400,6 +312,11 @@ svg *.content{ fill: $cool-grey-40; }
 
 .blog-feature {
 	background-color: $periwinkle;
+	color: $white;
+}
+
+a.blog-link {
+	text-decoration: none;
 }
 
 .svg-padding {

@@ -2,6 +2,7 @@
 title: "Finding an Interaction Model"
 category: process
 tags: ux, ui, interaction, exploration, feature
+preview: preview.jpg
 masthead: introduction.png
 ---
 

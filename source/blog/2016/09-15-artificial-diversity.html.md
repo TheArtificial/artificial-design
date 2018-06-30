@@ -1,8 +1,6 @@
 ---
 title: "Artificial Diversity: Creating a Feminine Culture"
-category: thoughts
 tags: hiring, recruiting, culture, women
-author: shannon
 ---
 
 This year marks my tenth year out of university. It’s also my tenth year as a full-time designer. I’ve been around. I’ve worked in-house. I’ve consulted. I’ve worked in advertising and in UX. I’ve designed social networks for cats and music lovers. I’ve designed game UI and interfaces for financial analysts. I’ve choreographed experiences in retail and predicted tech trends that we’re finally seeing come to life. I’ve worked with clients on three continents.

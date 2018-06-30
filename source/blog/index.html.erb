@@ -27,11 +27,12 @@ noindex: true
 		%>
 			<div class="<%= 'left-2 ' if i == 0 %>col-3">
 
-			<a href="<%= url %>">
+			<a class="blog-link" href="<%= url %>">
 				<div class="card blog-feature">
 					<img src="<%= img_url %>">
 					<div class="padded">
-						<%= article.title %>
+						<p class="label"><%= article.date.strftime('%Y.%m.%d') %></p>
+						<p class="statement"><%= article.title %></p>
 					</div>
 				</div>
 			</a>
