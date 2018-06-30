@@ -18,4 +18,4 @@ Schrödinger’s cat is a [thought experiment](http://en.wikipedia.org/wiki/Schr
 
 From here, the design was easy: one box (with a closed lid) and two cats. It only took a few rounds of tweaking to get the expressions (or [states](http://en.wikipedia.org/wiki/Cat_state)) of the cat just right, and it was ready to publish. It’s not your traditional icon, but we’re looking forward to seeing it in use!
 
-Have you released to [doubt] or any of our other icons into the wild? [Let us know!](mailto:collaborate@theartificial.nl)
+Have you released to [doubt] or any of our other icons into the wild? [Let us know!](mailto:hello@theartificial.design)
