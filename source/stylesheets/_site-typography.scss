@@ -147,51 +147,40 @@ ul { list-style-type: none; }
 // for tablet
 @media only screen and (min-device-width: 768px) {
 
-	p, ul, li {
-		font-size: 12px;
-		line-height: 18px;
-	}
-
 	.title {
-		font-size: 42px;
-		line-height: 48px;
+		font-size: 54px;
+		line-height: 62px;
 	}
 
-	.small-title {
-		font-size: 20px;
-		line-height: 26px;
+  .subtitle {
+		font-size: 54px;
+		line-height: 62px;
 	}
 
-	.subtitle {
-		font-size: 20px;
-		line-height: 26px;
-	}
+  .small-title {
+    font-size: 36px;
+    line-height: 42px;
+  }
 
-	.small-subtitle {
-		font-size: 16px;
-		line-height: 22px;
-		padding-bottom: 12px;
-	}
+  .heading {
+    font-size: 32px;
+    line-height: 40px;
+  }
 
-	.description {
-		font-size: 20px;
-		line-height: 28px;
-	}
+  .subheading {
+    font-size: 18px;
+    line-height: 24px;
+  }
 
-	.letters {
-		font-size: 80px;
-		line-height: 140px;
-	}
+  .summary {
+    font-size: 24px;
+    line-height: 30px;
+  }
 
 	.statement {
-		font-size: 32px;
-		line-height: 40px;
-		padding-bottom: 20px;
-	}
-
-	.small-statement, .small-statement * {
-		font-size: 28px;
-		line-height: 36px;
+		font-size: 20px;
+		line-height: 28px;
+		padding-bottom: 24px;
 	}
 
 	.label {
@@ -199,29 +188,14 @@ ul { list-style-type: none; }
 		line-height: 14px;
 	}
 
-	.snippit {
-		font-size: 14px;
-		line-height: 20px;
-	}
-
-	.large-body {
-		font-size: 14px;
-		line-height: 22px;
-	}
-
-	.small-body {
-		font-size: 12px;
-		line-height: 16px;
-	}
+  .team li {
+    font-size: 18px;
+    line-height: 24px;
+  }
 }
 
 // for desktop
 @media only screen and (min-width: 960px) {
-
-	p, li, ul {
-		font-size: 14px;
-		line-height: 22px;
-	}
 
 	.title {
 		font-size: 72px;

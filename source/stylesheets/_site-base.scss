@@ -192,11 +192,16 @@ body {
 }
 
 @media only screen and (min-device-width: 768px) {
-	.case-study, .blog-feature { min-height: 320px; height: 400px; }
+	.case-study, .blog-feature {
+		min-height: 280px;
+		height: 280px; 
+	}
 }
 
 @media only screen and (min-width: 960px) {
-	.case-study, .blog-feature { height: 340px; }
+	.case-study, .blog-feature {
+		height: 340px;
+	}
 }
 
 // footer
