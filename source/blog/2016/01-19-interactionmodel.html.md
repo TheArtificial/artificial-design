@@ -1,8 +1,7 @@
 ---
 title: "Finding an Interaction Model"
 category: process
-tags: ux, ui, interaction, exploration
-author: shannon
+tags: ux, ui, interaction, exploration, feature
 masthead: introduction.png
 ---
 

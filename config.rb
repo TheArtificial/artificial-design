@@ -56,7 +56,7 @@ helpers do
 	end
 end
 
-set :site_url, 'https://theartificial.com/'
+set :site_url, 'https://artificial.design/'
 
 set :css_dir, 'stylesheets'
 
@@ -96,7 +96,7 @@ set :markdown,  fenced_code_blocks: true,
                 smartypants: true,
                 footnotes: true
 
-activate :syntax
+# activate :syntax
 
 activate :search do |search|
 
@@ -104,7 +104,7 @@ activate :search do |search|
   include Padrino::Helpers::FormatHelpers
   include Padrino::Helpers::TagHelpers
 
-  search.resources = ['blog/', 'work/', 'ftfy/']
+  search.resources = ['blog/', 'work/']
   search.index_path = 'search/index.json'
   search.fields = {
     title:    {boost: 100, store: true, required: true},
@@ -139,17 +139,8 @@ activate :search do |search|
   end
 end
 
-# Redirects
-# note https://github.com/middleman/middleman/issues/2011
-# and make sure to set up the host to send 301: http://docs.aws.amazon.com/AmazonS3/latest/dev/how-to-page-redirect.html
-
-redirect "3dsystems.html", to: "/work/3DSystems-consumer.html"
-redirect "designfordeath.html", to: "/laboratory/futureofdeath.html"
-redirect "travelguide/index.html", to: "/cityguide/"
-
 configure :build do
   activate :minify_css
-  activate :minify_javascript, ignore: 'jquery.artificial.logo.js'
   # activate :gzip
   # default_caching_policy public: true, must_revalidate: true
 

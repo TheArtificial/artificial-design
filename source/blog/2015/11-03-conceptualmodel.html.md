@@ -1,8 +1,7 @@
 ---
 title: "Designing a Conceptual Model"
 category: process
-tags: interaction, usability, design, process
-author: shannon
+tags: interaction, usability, design, process, feature
 preview: preview@2x.png
 masthead: masthead.png
 ---
