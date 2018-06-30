@@ -67,17 +67,47 @@
 	}
 }
 
+#footer .container {
+	padding-top: 80px;
+}
+
 #header {
 	background-color: $mint;
+}
+
+#footer-logo {
+	fill: $mint;
+}
+
+#footer-notes p {
+	color: $mint;
 }
 
 .work_vanmoof #header, .work_3dsystems #header, .work_ugrow #header, .work_corrio #header, .work_facesmart #header, .work_roader #header {
 	background-color: $sea;
 }
 
+.work_vanmoof #footer-logo, .work_3dsystems #footer-logo, .work_ugrow #footer-logo, .work_corrio #footer-logo, .work_facesmart #footer-logo, .work_roader #footer-logo {
+	fill: $sea;
+}
+
+.work_vanmoof #footer-notes p, .work_3dsystems #footer-notes p, .work_ugrow #footer-notes p, .work_corrio #footer-notes p, .work_facesmart #footer-notes p, .work_roader #footer-notes p {
+	color: $sea;
+}
+
 .about_index #header {
 	background-color: $sky;
 }
+
+.about_index #footer-logo {
+	fill: $sky;
+}
+
+.about_index #footer-notes p {
+	color: $sky;
+}
+
+
 
 
 // content
