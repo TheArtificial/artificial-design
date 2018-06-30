@@ -608,10 +608,10 @@ nofeed: true
         <div class="padded">
           <p>I am currently writing The Experience Designer’s Guidebook. Take a sneak peek.</p>
           <p>Or read other writings about design. Here are some features:</p>
-          <ul class="link-stack">
-            <li><a href="">Lorem ipsum</a></li>
-            <li><a href="">Lorem ipsum</a></li>
-            <li><a href="">Lorem ipsum</a></li>
+					<ul class="link-stack">
+					<% blog.articles.select{|a| a.tags.include?('feature')}.each do |article| %>			
+						<li><a href="<%= article.url %>"><%= article.title %></a></li>
+					<% end %>
           </ul>
         </div>
       </div>
