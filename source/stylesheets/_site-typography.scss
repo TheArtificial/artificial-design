@@ -4,15 +4,24 @@
 p, ul, li, h1, h2, h3, h4, h5 { margin: 0; }
 
 #logo, .title, .small-subtitle, .small-title, .letters { font-family: "Crimson", Georgia, Times, serif; }
-#logo, .small-title, .subtitle, .letters, .label, .metadata { font-weight: 700; }
+#logo, .small-title, .subtitle, .letters, .label, .metadata, .link-stack { font-weight: 600; }
  .title, .description, .statement, .small-statement { font-weight: 400; }
  .title, .label { text-transform: uppercase; }
 
 .small-statement p { padding-bottom: 24px; }
 .small-body { font-weight: 400; }
 
+.link-stack {
+  padding-left: 0;
+  li {
+    padding-top: 20px;
+    a {
+      text-decoration: none;
+    }
+  }
+}
+
 ul { list-style-type: none; }
-a { text-decoration: none; }
 
 .center { text-align: center; }
 

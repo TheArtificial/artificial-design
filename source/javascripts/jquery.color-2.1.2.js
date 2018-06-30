@@ -637,7 +637,7 @@ jQuery.cssHooks.borderColor = {
 // jquery.color.svg-names.js.
 colors = jQuery.Color.names = {
 	// 4.1. Basic color keywords
-	aqua: "#00ffff",
+	mint: "#00ffff",
 	black: "#000000",
 	blue: "#0000ff",
 	fuchsia: "#ff00ff",

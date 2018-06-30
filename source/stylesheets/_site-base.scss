@@ -3,7 +3,7 @@
 
 @media only screen and (min-device-width: 320px) {
 	#header {
-		background-color: $aqua;
+		background-color: $mint;
 
 		#logo {
 			padding-top: 18px;
@@ -111,6 +111,7 @@ body {
 		font-weight: normal;
 	}
 }
+
 
 // card sizing for case studies and experiments
 @media only screen and (min-device-width: 320px) {
@@ -360,13 +361,16 @@ svg *.content{ fill: $cool-grey-40; }
 
 .white { background-color: $white; }
 
-.aqua { background-color: $aqua; }
+.mint { background-color: $mint; }
 .sea { background-color: $sea; }
 .sky { background-color: $sky; }
+.aquamarine { background-color: $aquamarine; }
 .periwinkle { background-color: $periwinkle; }
-.violet { background-color: $violet; }
 
 .deep-violet {
 	background-color: $deep-violet;
 	color: $white;
 }
+
+// text & svg colors
+.svg-deep-violet{ fill: $deep-violet; }
