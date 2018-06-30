@@ -67,11 +67,17 @@
 	}
 }
 
-#header { background-color: $mint; }
-.work_vanmoof #header, .work_3dsystems #header {
+#header {
+	background-color: $mint;
+}
+
+.work_vanmoof #header, .work_3dsystems #header, .work_ugrow #header, .work_corrio #header, .work_facesmart #header, .work_roader #header {
 	background-color: $sea;
 }
 
+.about_index #header {
+	background-color: $sky;
+}
 
 
 // content
