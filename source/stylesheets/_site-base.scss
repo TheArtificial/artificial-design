@@ -31,6 +31,9 @@
 						a:hover {
 							opacity: 0.75;
 						}
+						a.current {
+							border-bottom: 2px solid $deep-violet;
+						}
 					}
 					li.active a {
 						color: red;
@@ -66,6 +69,8 @@
 		}
 	}
 }
+
+
 
 // content
 body {
