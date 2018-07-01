@@ -51,25 +51,26 @@ noindex: true
 	</div>
 
 	<!-- listing -->
-	<div class="flex container extra-bottom blog-stack">
-	<% page_articles.each do |article| %>
-		<div class="col-2 left-1">
-			<div class="padded">
-				<a href="<%= article.url%>" class="blog-date"><%= article.date.strftime('%Y.%m.%d') %></a>
+	<div class="extra-bottom">
+		<% page_articles.each do |article| %>
+			<div class="flex container blog-stack">
+				<div class="col-2 left-1">
+					<div class="padded">
+						<a href="<%= article.url%>" class="blog-date"><%= article.date.strftime('%Y.%m.%d') %></a>
+					</div>
+				</div>
+				<div class="col-7">
+					<div class="padded">
+						<a href="<%= article.url%>"  class="blog-title"><%= article.title %></a>
+					</div>
+				</div>
+				<div class="col-1">
+					<div class="padded">
+						<a href="<%= article.url%>" class="blog-arrow">➔</a>
+					</div>
+				</div>
 			</div>
-		</div>
-		<div class="col-7">
-			<div class="padded">
-				<a href="<%= article.url%>"  class="blog-title"><%= article.title %></a>
-			</div>
-		</div>
-		<div class="col-1">
-			<div class="padded">
-				<a href="<%= article.url%>" class="blog-arrow">➔</a>
-			</div>
-		</div>
-		</a>
-	<% end %>
+		<% end %>
 	</div>
 
 </section>

@@ -72,11 +72,11 @@ img {
 	.flex.container.triple {
 		width: 100%;
 
-		.col-1, .col-2, .col-3 {
+		.col-1, .col-2 {
 			width: 33%;
 		}
 
-		.col-4, .col-5, .col-6 {
+		.col-3, .col-4, .col-5, .col-6 {
 			width: 50%;
 		}
 
@@ -86,7 +86,7 @@ img {
 	}
 
 	.card {
-		margin: 8px 8px 0 8px;
+		margin: 2px;
 		overflow: hidden;
 
 		.padded {
