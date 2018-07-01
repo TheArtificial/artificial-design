@@ -25,6 +25,11 @@ nofeed: true
     $('.slide-panel').css('background','none');
   });
 
+	// See https://medium.com/samsung-internet-dev/toolbars-keyboards-and-the-viewports-10abcc6c3769
+	$( window ).resize(function(){
+		$('.slide-panel').height($( window ).height());
+	});
+
   function tweenColor(currentElement, offset) {
     var bgColor = jQuery.Color(currentElement.data('background-color')),
         nextElement = currentElement.next('.slide-panel');
