@@ -19,7 +19,8 @@ a.blog-link {
 	text-decoration: none;
 }
 
-.team {
+ul.team {
+  padding-left: 0;
   li {
     padding-bottom: 0;
   }
@@ -96,11 +97,6 @@ ul { list-style-type: none; }
 		padding-bottom: 10px;
 	}
 
-  .team li {
-    font-size: 20px;
-    line-height: 30px;
-  }
-
   .link-stack {
     padding-left: 0;
     li {
@@ -157,11 +153,6 @@ ul { list-style-type: none; }
 		line-height: 14px;
 	}
 
-  .team li {
-    font-size: 18px;
-    line-height: 24px;
-  }
-
   .link-stack {
     padding-left: 0;
     li {
@@ -213,9 +204,4 @@ ul { list-style-type: none; }
 		font-size: 14px;
 		line-height: 14px;
 	}
-
-  .team li {
-    font-size: 20px;
-    line-height: 30px;
-  }
 }

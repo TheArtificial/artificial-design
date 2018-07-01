@@ -8,22 +8,22 @@
 }
 
 .card.basic {
-  background-color: $cool-grey-80;
-  color: $cool-grey-20;
+  background-color: $deep-violet;
+  color: $white;
   .meta {
     padding: 32px 16px;
   }
 }
 
 .card.thing {
-  background-color: $cool-grey-50;
+  background-color: $deep-violet;
   color: $white;
   padding: 32px 16px;
 }
 
 // cocktails are special and mostly defined in cocktails.css.scss
 .card.cocktail-preview {
-  background-color: $palest-lime;
+  background-color: $deep-violet;
 }
 
 .card.work {
@@ -68,11 +68,11 @@
 
 .card.person {
   // background specified as class
-  color: $cool-grey-90;
+  color: $deep-violet;
 
   .logo svg {
     path, rect, polygon {
-  		fill: $cool-grey-90;
+  		fill: $deep-violet;
   	}
   }
 

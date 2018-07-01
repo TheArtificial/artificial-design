@@ -83,16 +83,6 @@ body {
 .extra-bottom { padding-bottom: 80px; }
 .extra-top { padding-top: 80px; }
 
-.small-statement * {
-	color: $cool-grey-40;
-
-	strong, a {
-		color: $white;
-		font-weight: normal;
-	}
-}
-
-
 // page introductions
 
 .top-contextual { padding-bottom: 80px; }
@@ -120,6 +110,7 @@ body {
 	.top-short { height: 260px; }
 	.page-intro { padding-top: 40px; }
 	.card-stack { margin-top: -120px; }
+	.offset-top { margin-top: -140px; }
 }
 
 @media only screen and (min-device-width: 768px) {
@@ -144,6 +135,7 @@ body {
 	.top-short { height: 460px; }
 	.page-intro { padding-top: 100px; }
 	.card-stack { margin-top: -240px; }
+	.offset-top { margin-top: -240px; }
 }
 
 @media only screen and (min-width: 960px) {
@@ -183,59 +175,12 @@ body {
 }
 
 // special styles
-.center {
-	text-align: center;
-}
-
+.center { text-align: center; }
 .white-text { color: $white; }
-
-.dark-text {
-	p, a { color: $cool-grey-90; }
-}
-
-.dark-fill *, .dark-fill g * {
-	fill: $cool-grey-90;
-}
-
-.darkest-grey {
-	background-color: $cool-grey-90;
-	color: $white;
-}
-
-.grey {
-	background-color: $cool-grey-50;
-	h1, a {
-		color: $white;
-	}
-}
-
-.tulip {
-	background-color: $tulip;
-
-	h3 {
-		font-size: 2em;
-		color: $dark-tulip;
-		padding-bottom: 5px;
-		margin-top: 20px;
-	}
-
-}
-
-.turquoise {
-	background-color: $turquoise;
-	a {
-		color: white;
-	}
-}
 
 .section {
 	padding-top: 64px;
 	padding-bottom: 64px;
-}
-
-.section-title {
-	margin-top: 64px;
-	margin-bottom: 200px;
 }
 
 .link-stack a {
@@ -291,6 +236,7 @@ a.arrow {
 
 // background colors
 .white { background-color: $white; }
+.cool-grey-10 { background-color: $cool-grey-10; }
 
 .mint { background-color: $mint; }
 .sea { background-color: $sea; }
