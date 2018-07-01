@@ -67,73 +67,6 @@
 	}
 }
 
-// navigation color schemes
-#footer .container {
-	padding-top: 80px;
-}
-
-#header {
-	background-color: $mint;
-}
-
-#footer-logo {
-	fill: $mint;
-}
-
-#footer-notes p {
-	color: $mint;
-}
-
-.work_vanmoof #header, .work_3dsystems #header, .work_ugrow #header, .work_corrio #header, .work_facesmart #header, .work_roader #header {
-	background-color: $sea;
-}
-
-.work_vanmoof #footer-logo, .work_3dsystems #footer-logo, .work_ugrow #footer-logo, .work_corrio #footer-logo, .work_facesmart #footer-logo, .work_roader #footer-logo {
-	fill: $sea;
-}
-
-.work_vanmoof #footer-notes p, .work_3dsystems #footer-notes p, .work_ugrow #footer-notes p, .work_corrio #footer-notes p, .work_facesmart #footer-notes p, .work_roader #footer-notes p {
-	color: $sea;
-}
-
-.about_index #header {
-	background-color: $sky;
-}
-
-.about_index #footer-logo {
-	fill: $sky;
-}
-
-.about_index #footer-notes p {
-	color: $sky;
-}
-
-.blog_index #header {
-	background-color: $aquamarine;
-}
-
-.blog_index #footer-logo {
-	fill: $aquamarine;
-}
-
-.blog_index #footer-notes p {
-	color: $aquamarine;
-}
-
-.blog:not(.blog_index) #header {
-	background-color: $periwinkle;
-}
-
-.blog:not(.blog_index) #footer-logo {
-	fill: $periwinkle;
-}
-
-.blog:not(.blog_index) #footer-notes p {
-	color: $periwinkle;
-}
-
-
-
 // content
 body {
 	font-family: "Open Sans", Helvetica, Arial, sans-serif;
@@ -143,12 +76,6 @@ body {
 	a {
 		color: $deep-violet;
 	}
-}
-
-
-// two-column layout for mobile
-.container.packery {
-	margin-top: 20px;
 }
 
 .extra-padded { padding: 48px 16px 24px 16px; }
@@ -185,6 +112,12 @@ body {
 
 // card sizing for case studies and experiments
 @media only screen and (min-device-width: 320px) {
+	.slide-panel > .container {
+			padding-top: 100px;
+		}
+	.offset-top {
+		margin-top: -160px;
+	}
 	.case-study, .blog-feature {
 		min-height: 380px;
 		border-radius: 2px
@@ -192,9 +125,18 @@ body {
 	.svg-adaptive {
 		width: 100%;
 	}
+	.logo-list {
+		height: 60px;
+	}
 }
 
 @media only screen and (min-device-width: 768px) {
+	.slide-panel > .container {
+			padding-top: 200px;
+		}
+	.offset-top {
+		margin-top: -200px;
+	}
 	.case-study, .blog-feature {
 		min-height: 280px;
 		height: 280px;
@@ -202,9 +144,18 @@ body {
 	.svg-adaptive {
 		width: 100%;
 	}
+	.logo-list {
+		height: 100%;
+	}
 }
 
 @media only screen and (min-width: 960px) {
+	.slide-panel > .container {
+			padding-top: 200px;
+		}
+	.offset-top {
+		margin-top: -240px;
+	}
 	.case-study, .blog-feature {
 		height: 340px;
 	}
@@ -345,20 +296,11 @@ a.arrow {
 	color: $white;
 }
 
-a.blog-link {
-	text-decoration: none;
-}
-
 .svg-padding {
 	padding: 20px 0 20px 0;
 }
 
-.offset-top {
-	margin-top: -240px;
-}
-
 // background colors
-
 .white { background-color: $white; }
 
 .mint { background-color: $mint; }
@@ -375,4 +317,69 @@ a.blog-link {
 // text & svg colors
 .svg-deep-violet {
 	fill: $deep-violet;
+}
+
+// navigation color schemes
+#footer .container {
+	padding-top: 80px;
+}
+
+#header {
+	background-color: $mint;
+}
+
+#footer-logo {
+	fill: $mint;
+}
+
+#footer-notes p {
+	color: $mint;
+}
+
+.work_vanmoof #header, .work_3dsystems #header, .work_ugrow #header, .work_corrio #header, .work_facesmart #header, .work_roader #header {
+	background-color: $sea;
+}
+
+.work_vanmoof #footer-logo, .work_3dsystems #footer-logo, .work_ugrow #footer-logo, .work_corrio #footer-logo, .work_facesmart #footer-logo, .work_roader #footer-logo {
+	fill: $sea;
+}
+
+.work_vanmoof #footer-notes p, .work_3dsystems #footer-notes p, .work_ugrow #footer-notes p, .work_corrio #footer-notes p, .work_facesmart #footer-notes p, .work_roader #footer-notes p {
+	color: $sea;
+}
+
+.about_index #header {
+	background-color: $sky;
+}
+
+.about_index #footer-logo {
+	fill: $sky;
+}
+
+.about_index #footer-notes p {
+	color: $sky;
+}
+
+.blog_index #header {
+	background-color: $aquamarine;
+}
+
+.blog_index #footer-logo {
+	fill: $aquamarine;
+}
+
+.blog_index #footer-notes p {
+	color: $aquamarine;
+}
+
+.blog:not(.blog_index) #header {
+	background-color: $periwinkle;
+}
+
+.blog:not(.blog_index) #footer-logo {
+	fill: $periwinkle;
+}
+
+.blog:not(.blog_index) #footer-notes p {
+	color: $periwinkle;
 }

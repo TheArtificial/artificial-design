@@ -15,15 +15,8 @@ p, ul, li, h1, h2, h3, h4, h5 { margin: 0; }
 
 .title, .small-title, .label { text-transform: uppercase; }
 
-
-.link-stack {
-  padding-left: 0;
-  li {
-    padding-top: 20px;
-    a {
-      text-decoration: none;
-    }
-  }
+a.blog-link {
+	text-decoration: none;
 }
 
 .team {
@@ -59,9 +52,9 @@ ul { list-style-type: none; }
 	}
 
 	.title {
-		font-size: 36px;
-		line-height: 42px;
-		padding-bottom: 20px;
+		font-size: 30px;
+		line-height: 36px;
+		padding-bottom: 0px;
 	}
 
 	.small-title {
@@ -76,72 +69,32 @@ ul { list-style-type: none; }
 		padding-bottom: 24px;
 	}
 
-	.small-subtitle {
-		font-size: 16px;
-		line-height: 22px;
-		padding-bottom: 16px;
-	}
-
-	.description {
-		font-size: 20px;
-		line-height: 28px;
-	}
-
-	.letters {
-		font-size: 120px;
-		line-height: 200px;
-	}
-
 	.statement {
 		font-size: 24px;
 		line-height: 32px;
 		padding-bottom: 20px;
 	}
 
-	.small-statement, .small-statement * {
-		font-size: 24px;
-		line-height: 32px;
-	}
-
 	.label {
-		font-size: 14px;
-		line-height: 14px;
-		padding-bottom: 20px;
+		font-size: 12px;
+		line-height: 12px;
+		padding-bottom: 10px;
 	}
 
-	// .metadata is like .label but without the padding baggage
-	.metadata {
-		font-size: 14px;
-		line-height: 14px;
+  .team li {
+    font-size: 20px;
+    line-height: 30px;
+  }
 
-		padding-left: 0; // in case this is a ul or ol
-
-		li {
-			display: inline-block;
-			margin: 0;
-		}
-		li + li::before {
-			content: " | ";
-			font-size: 150%;
-			font-weight: 100;
-			margin: 0 0 0 .33em;
-		}
-	}
-
-	.snippit {
-		font-size: 16px;
-		line-height: 22px;
-	}
-
-	.large-body {
-		font-size: 16px;
-		line-height: 24px;
-	}
-
-	.small-body {
-		font-size: 14px;
-		line-height: 18px;
-	}
+  .link-stack {
+    padding-left: 0;
+    li {
+      padding-top: 15px;
+      a {
+        text-decoration: none;
+      }
+    }
+  }
 }
 
 // for tablet
@@ -150,6 +103,7 @@ ul { list-style-type: none; }
 	.title {
 		font-size: 54px;
 		line-height: 62px;
+    padding-bottom: 20px;
 	}
 
   .subtitle {
@@ -191,6 +145,13 @@ ul { list-style-type: none; }
   .team li {
     font-size: 18px;
     line-height: 24px;
+  }
+
+  .link-stack {
+    padding-left: 0;
+    li {
+      padding-top: 20px;
+    }
   }
 }
 
