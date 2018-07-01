@@ -189,18 +189,27 @@ body {
 		min-height: 380px;
 		border-radius: 2px
 	}
+	.svg-adaptive {
+		width: 100%;
+	}
 }
 
 @media only screen and (min-device-width: 768px) {
 	.case-study, .blog-feature {
 		min-height: 280px;
-		height: 280px; 
+		height: 280px;
+	}
+	.svg-adaptive {
+		width: 100%;
 	}
 }
 
 @media only screen and (min-width: 960px) {
 	.case-study, .blog-feature {
 		height: 340px;
+	}
+	.svg-adaptive {
+		width: 100%;
 	}
 }
 
