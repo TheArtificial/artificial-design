@@ -11,7 +11,7 @@ cache_control: public
 
 s3_reduced_redundancy: true
 
-cloudfront_distribution_id: [FIXME]
+cloudfront_distribution_id: E3I6VE8ROWED94
 cloudfront_distribution_config:
   default_cache_behavior:
     min_ttl: <%= 60 * 60 * 24 %>
