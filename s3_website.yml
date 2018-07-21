@@ -1,0 +1,23 @@
+site: build
+
+# s3_id: AWS_ACCESS_KEY_ID
+# s3_secret: AWS_SECRET_ACCESS_KEY
+
+s3_bucket: artificial.design
+s3_endpoint: eu-west-1
+
+# trying to solve https://github.com/laurilehmijoki/s3_website/issues/73
+cache_control: public
+
+s3_reduced_redundancy: true
+
+cloudfront_distribution_id: E3I6VE8ROWED94
+cloudfront_distribution_config:
+  default_cache_behavior:
+    min_ttl: <%= 60 * 60 * 24 %>
+  aliases:
+    quantity: 1
+    items:site: build
+
+cloudfront_invalidate_root: true
+cloudfront_wildcard_invalidation: true
