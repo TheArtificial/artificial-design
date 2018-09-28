@@ -1,2 +1,7 @@
-.sass-cache
+.s3_sync
 build
+.bundle
+.cache
+.sass-cache/
+.DS_Store
+.vscode/settings.json
