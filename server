@@ -1,0 +1,37 @@
+Script started on Sun Mar 17 13:25:30 2019
+[?1034hbash-3.2$ script/server[C[C[C[C[C[C[C[C[C[C[Kscript/server
+[31mCould not find rake-12.3.2 in any of the sources[0m
+[33mRun `bundle install` to install missing gems.[0m
+bash-3.2$ budl[K[Kndle install
+[33mWarning: the running version of Bundler (1.14.4) is older than the version that created the lockfile (1.16.1). We suggest you upgrade to the latest version of Bundler by running `gem install bundler`.
+[0mFetching gem metadata from https://rubygems.org/..............
+Fetching version metadata from https://rubygems.org/...
+Fetching dependency metadata from https://rubygems.org/..
+xcrun: error: invalid active developer path (/Library/Developer/CommandLineTools), missing xcrun at: /Library/Developer/CommandLineTools/usr/bin/xcrun
+Fetching https://github.com/passatgt/middleman-search.git
+xcrun: error: invalid active developer path (/Library/Developer/CommandLineTools), missing xcrun at: /Library/Developer/CommandLineTools/usr/bin/xcrun
+
+[33mRetrying `git fetch --force --quiet --tags 'https://github.com/passatgt/middleman-search.git' "refs/heads/*:refs/heads/*"` due to error (2/4): Bundler::Source::Git::GitCommandError Git error: command `git fetch --force --quiet --tags 'https://github.com/passatgt/middleman-search.git' "refs/heads/*:refs/heads/*"` in directory /Users/shannon/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/cache/bundler/git/middleman-search-943c290be95630d3f113b9c2fe9920b2c42d0741 has failed.
+If this error persists you could try removing the cache directory '/Users/shannon/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/cache/bundler/git/middleman-search-943c290be95630d3f113b9c2fe9920b2c42d0741'[0mxcrun: error: invalid active developer path (/Library/Developer/CommandLineTools), missing xcrun at: /Library/Developer/CommandLineTools/usr/bin/xcrun
+
+[33mRetrying `git fetch --force --quiet --tags 'https://github.com/passatgt/middleman-search.git' "refs/heads/*:refs/heads/*"` due to error (3/4): Bundler::Source::Git::GitCommandError Git error: command `git fetch --force --quiet --tags 'https://github.com/passatgt/middleman-search.git' "refs/heads/*:refs/heads/*"` in directory /Users/shannon/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/cache/bundler/git/middleman-search-943c290be95630d3f113b9c2fe9920b2c42d0741 has failed.
+If this error persists you could try removing the cache directory '/Users/shannon/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/cache/bundler/git/middleman-search-943c290be95630d3f113b9c2fe9920b2c42d0741'[0mxcrun: error: invalid active developer path (/Library/Developer/CommandLineTools), missing xcrun at: /Library/Developer/CommandLineTools/usr/bin/xcrun
+
+[33mRetrying `git fetch --force --quiet --tags 'https://github.com/passatgt/middleman-search.git' "refs/heads/*:refs/heads/*"` due to error (4/4): Bundler::Source::Git::GitCommandError Git error: command `git fetch --force --quiet --tags 'https://github.com/passatgt/middleman-search.git' "refs/heads/*:refs/heads/*"` in directory /Users/shannon/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/cache/bundler/git/middleman-search-943c290be95630d3f113b9c2fe9920b2c42d0741 has failed.
+If this error persists you could try removing the cache directory '/Users/shannon/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/cache/bundler/git/middleman-search-943c290be95630d3f113b9c2fe9920b2c42d0741'[0mxcrun: error: invalid active developer path (/Library/Developer/CommandLineTools), missing xcrun at: /Library/Developer/CommandLineTools/usr/bin/xcrun
+
+[31mGit error: command `git fetch --force --quiet --tags
+'https://github.com/passatgt/middleman-search.git' "refs/heads/*:refs/heads/*"`
+in directory
+/Users/shannon/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/cache/bundler/git/middleman-search-943c290be95630d3f113b9c2fe9920b2c42d0741
+has failed.
+If this error persists you could try removing the cache directory
+'/Users/shannon/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/cache/bundler/git/middleman-search-943c290be95630d3f113b9c2fe9920b2c42d0741'[0m
+bash-3.2$ bundle install[C[C[C[C[C[C[C[C[C[C[1Pscript/server[C[C[C[C[C[C[C[C[C[Cbundle install[K[K[K[K[K[K[K[K[K[K[K[K[K[Kscript/server
+[31mCould not find rake-12.3.2 in any of the sources[0m
+[33mRun `bundle install` to install missing gems.[0m
+bash-3.2$ bundl[K[Kbund[K[K[K[K[K[K[Kcd
+bash-3.2$ cd[K[K
+bash-3.2$ 
+bash-3.2$ cd
+bash-3.2$ 
