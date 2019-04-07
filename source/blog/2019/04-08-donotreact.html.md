@@ -36,8 +36,7 @@ Consider what is being asked of you, and what you need to feel confident in prov
 Once you have answers to your questions and have made your needs known, set expectations for how long it will take to find a solution. If you’re dependent on someone else for input, make this clear. And if you don’t feel confident in committing to a solution, commit only to next steps.
 
 
-
-## Set a precident.
+## Set a precedent.
 The more often you react to a question or demand, the more your colleagues will expect it. You might get a reputation for being reactive, or worse for making rash decisions in the moment. Instead, cultivate a reputation of being responsive and thoughtful. Commit only when you can, and make it clear what you need when you can’t. Stay focused on the work, the plan, and next steps. Rinse. Repeat.
 
 Not only will these tactics help when managing stakeholders and their expectations, they will also keep you afloat when an asshole inevitably infiltrates your team.  Reacting to ego and judgement only amplify the problems; whereas staying calm and prioritizing the quality of the work keeps the conversation progressing in a positive way.
